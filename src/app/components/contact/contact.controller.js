@@ -3,12 +3,13 @@
 
   angular
     .module('treadstone')
-    .controller('ContactCtrl', ContactCtrl);
+    .controller('ContactController', ContactController);
 
   /** @ngInject */
-  function ContactCtrl($log) {
-    var vm = this;
+  function ContactController($log) {
+    //var vm = this;
 
     $log.debug(' Contact controller called');
+}
 
 })();

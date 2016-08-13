@@ -3,12 +3,13 @@
 
   angular
     .module('treadstone')
-    .controller('PricingCtrl', PricingCtrl);
+    .controller('PricingController', PricingController);
 
   /** @ngInject */
-  function PricingCtrl($log) {
-    var vm = this;
+  function PricingController($log) {
+    //var vm = this;
 
     $log.debug(' Pricing controller called');
+}
 
 })();

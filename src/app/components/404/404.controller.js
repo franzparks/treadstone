@@ -3,12 +3,13 @@
 
   angular
     .module('treadstone')
-    .controller('404Ctrl', 404Ctrl);
+    .controller('ErrorController', ErrorController);
 
   /** @ngInject */
-  function 404Ctrl($log) {
-    var vm = this;
+  function ErrorController($log) {
+    //var vm = this;
 
     $log.debug(' 404 controller called');
+}
 
 })();

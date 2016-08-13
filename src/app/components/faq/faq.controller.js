@@ -3,12 +3,13 @@
 
   angular
     .module('treadstone')
-    .controller('FaqCtrl', FaqCtrl);
+    .controller('FaqController', FaqController);
 
   /** @ngInject */
-  function FaqCtrl($log) {
-    var vm = this;
+  function FaqController($log) {
+    //var vm = this;
 
     $log.debug(' Faq controller called');
+}
 
 })();

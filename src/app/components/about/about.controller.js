@@ -3,12 +3,13 @@
 
   angular
     .module('treadstone')
-    .controller('AboutCtrl', AboutCtrl);
+    .controller('AboutController', AboutController);
 
   /** @ngInject */
-  function AboutCtrl($log) {
-    var vm = this;
+  function AboutController($log) {
+    //svar vm = this;
 
     $log.debug(' About controller called');
+}
 
 })();

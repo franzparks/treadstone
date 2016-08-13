@@ -3,12 +3,13 @@
 
   angular
     .module('treadstone')
-    .controller('ServicesCtrl', ServicesCtrl);
+    .controller('ServicesController', ServicesController);
 
   /** @ngInject */
-  function ServicesCtrl($log) {
-    var vm = this;
+  function ServicesController($log) {
+    //var vm = this;
 
     $log.debug(' Services controller called');
+}
 
 })();
