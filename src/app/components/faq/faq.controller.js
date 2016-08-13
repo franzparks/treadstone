@@ -6,7 +6,7 @@
     .controller('FaqCtrl', FaqCtrl);
 
   /** @ngInject */
-  function FaqController($log) {
+  function FaqCtrl($log) {
     var vm = this;
 
     $log.debug(' Faq controller called');

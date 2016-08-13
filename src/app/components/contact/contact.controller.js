@@ -6,7 +6,7 @@
     .controller('ContactCtrl', ContactCtrl);
 
   /** @ngInject */
-  function ContactController($log) {
+  function ContactCtrl($log) {
     var vm = this;
 
     $log.debug(' Contact controller called');

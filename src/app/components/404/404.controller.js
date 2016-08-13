@@ -6,7 +6,7 @@
     .controller('404Ctrl', 404Ctrl);
 
   /** @ngInject */
-  function 404Controller($log) {
+  function 404Ctrl($log) {
     var vm = this;
 
     $log.debug(' 404 controller called');

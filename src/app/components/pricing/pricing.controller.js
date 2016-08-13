@@ -6,7 +6,7 @@
     .controller('PricingCtrl', PricingCtrl);
 
   /** @ngInject */
-  function PricingController($log) {
+  function PricingCtrl($log) {
     var vm = this;
 
     $log.debug(' Pricing controller called');

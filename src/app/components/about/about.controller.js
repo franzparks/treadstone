@@ -6,7 +6,7 @@
     .controller('AboutCtrl', AboutCtrl);
 
   /** @ngInject */
-  function AboutController($log) {
+  function AboutCtrl($log) {
     var vm = this;
 
     $log.debug(' About controller called');
