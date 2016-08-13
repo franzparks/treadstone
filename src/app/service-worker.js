@@ -102,15 +102,15 @@ self.addEventListener('install', function(event) {
           url.search += 'sw-precache=' + now;
           var urlWithCacheBusting = url.toString();
 
-          console.log('Adding URL "%s" to cache named "%s"', urlWithCacheBusting, cacheName);
+          //console.log('Adding URL "%s" to cache named "%s"', urlWithCacheBusting, cacheName);
           return caches.open(cacheName).then(function(cache) {
             var request = new Request(urlWithCacheBusting, {credentials: 'same-origin'});
             return fetch(request.clone()).then(function(response) {
               if (response.status == 200) {
                 return cache.put(request, response);
               } else {
-                console.error('Request for %s returned a response with status %d, so not attempting to cache it.',
-                  urlWithCacheBusting, response.status);
+                //console.error('Request for %s returned a response with status %d, so not attempting to cache it.',
+                 // urlWithCacheBusting, response.status);
                 // Get rid of the empty cache if we can't add a successful response to it.
                 return caches.delete(cacheName);
               }
@@ -123,7 +123,7 @@ self.addEventListener('install', function(event) {
             return cacheName.indexOf(CacheNamePrefix) == 0 &&
                    !(cacheName in CurrentCacheNamesToAbsoluteUrl);
           }).map(function(cacheName) {
-            console.log('Deleting out-of-date cache "%s"', cacheName);
+            //console.log('Deleting out-of-date cache "%s"', cacheName);
             return caches.delete(cacheName);
           })
         )
@@ -145,14 +145,14 @@ if (self.clients && (typeof self.clients.claim == 'function')) {
 
 self.addEventListener('message', function(event) {
   if (event.data.command == 'delete_all') {
-    console.log('About to delete all caches...');
+    //console.log('About to delete all caches...');
     deleteAllCaches().then(function() {
-      console.log('Caches deleted.');
+      //console.log('Caches deleted.');
       event.ports[0].postMessage({
         error: null
       });
     }).catch(function(error) {
-      console.log('Caches not deleted:', error);
+      //console.log('Caches not deleted:', error);
       event.ports[0].postMessage({
         error: error
       });
@@ -175,18 +175,16 @@ self.addEventListener('fetch', function(event) {
         caches.open(cacheName).then(function(cache) {
           return cache.keys().then(function(keys) {
             return cache.match(keys[0]).then(function(response) {
-              return response || fetch(event.request).catch(function(e) {
-                console.error('Fetch for "%s" failed: %O', urlWithoutIgnoredParameters, e);
+              return response || fetch(event.request).catch(function() {
+                //console.error('Fetch for "%s" failed: %O', urlWithoutIgnoredParameters, e);
               });
             });
           });
-        }).catch(function(e) {
-          console.error('Couldn\'t serve response for "%s" from cache: %O', urlWithoutIgnoredParameters, e);
+        }).catch(function() {
+          //console.error('Couldn\'t serve response for "%s" from cache: %O', urlWithoutIgnoredParameters, e);
           return fetch(event.request);
         })
       );
     }
   }
 });
-
-Contact GitHub API Training Shop Blog About
