@@ -6,7 +6,7 @@
     .controller('ServicesCtrl', ServicesCtrl);
 
   /** @ngInject */
-  function PricingController($log) {
+  function ServicesController($log) {
     var vm = this;
 
     $log.debug(' Services controller called');
