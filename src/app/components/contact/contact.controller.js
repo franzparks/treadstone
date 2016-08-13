@@ -3,7 +3,7 @@
 
   angular
     .module('treadstone')
-    .controller('ContactCtrl', MainController);
+    .controller('ContactCtrl', ContactCtrl);
 
   /** @ngInject */
   function ContactController($log) {

@@ -3,7 +3,7 @@
 
   angular
     .module('treadstone')
-    .controller('BlogCtrl', MainController);
+    .controller('BlogCtrl', BlogCtrl);
 
   /** @ngInject */
   function BlogController($log) {

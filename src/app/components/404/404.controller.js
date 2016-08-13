@@ -3,7 +3,7 @@
 
   angular
     .module('treadstone')
-    .controller('404Ctrl', MainController);
+    .controller('404Ctrl', 404Ctrl);
 
   /** @ngInject */
   function 404Controller($log) {

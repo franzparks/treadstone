@@ -3,7 +3,7 @@
 
   angular
     .module('treadstone')
-    .controller('AboutCtrl', MainController);
+    .controller('AboutCtrl', AboutCtrl);
 
   /** @ngInject */
   function AboutController($log) {

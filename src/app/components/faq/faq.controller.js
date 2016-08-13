@@ -3,7 +3,7 @@
 
   angular
     .module('treadstone')
-    .controller('FaqCtrl', MainController);
+    .controller('FaqCtrl', FaqCtrl);
 
   /** @ngInject */
   function FaqController($log) {
