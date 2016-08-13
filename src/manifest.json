@@ -4,19 +4,19 @@
   "display": "standalone",
   "orientation": "portrait",
   "description": "Timezones with a human touch",
-  "start_url": "./index.html",
+  "start_url": "/",
   "theme_color": "#F1EFEB",
   "icons": [
   	{
-    	"src": "assets/images/angular.png",
+    	"src": "./assets/images/angular.png",
     	"sizes": "192x192"
   	},
   	{
-    	"src": "assets/images/yeoman.png",
+    	"src": "./assets/images/yeoman.png",
     	"sizes": "256x256"
   	},
   	{
-    	"src": "assets/images/gulp.png",
+    	"src": "./assets/images/gulp.png",
     	"sizes": "512x512"
   	}
   ],
