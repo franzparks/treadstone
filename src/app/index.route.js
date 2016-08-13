@@ -50,7 +50,7 @@
     .when('/blog/post', {
       templateUrl: 'app/components/blog/blog_item.html',
        controller: 'BlogController',
-       controllerAs: 'blog'
+       controllerAs: 'blog_item'
      })
     // else 404
     .otherwise('/404', {
