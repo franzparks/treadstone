@@ -53,10 +53,12 @@
        controllerAs: 'blog_item'
      })
     // else 404
-    .otherwise('/404', {
+    .when('/404', {
       templateUrl: 'app/components/404/error.html', 
       controller: 'ErrorController',
       controllerAs: 'error'
+    })
+    .otherwise('/', {
     });
   }
 
