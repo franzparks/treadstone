@@ -121,6 +121,14 @@ body {
     font-style: italic;
 }
 
+
+
+.text-font {
+  color: lime;
+  background-color: black;
+  font-family: Monaco, 'Lucida Console', monospace;
+}
+
 /* Footer Styles */
 footer {
     margin: 50px 0;
@@ -134,5 +142,5 @@ footer {
         /* increases the carousel height so it looks good on phones */
     }
 }
-Contact GitHub API Training Shop Blog About
+
 
