@@ -6,8 +6,10 @@
     .controller('FaqController', FaqController);
 
   /** @ngInject */
-  function FaqController($log) {
-    //var vm = this;
+  function FaqController($log, faqQuestionsService) {
+    var vm = this;
+    vm.faq = [];
+    vm.faq = faqQuestionsService.getFaqQuestions();
 
     $log.debug(' Faq controller called');
 }

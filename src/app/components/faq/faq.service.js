@@ -3,10 +3,10 @@
 
   angular
       .module('treadstone')
-      .service('webDevTec', webDevTec);
+      .service('faqQuestionsService', faqQuestionsService);
 
   /** @ngInject */
-  function webDevTec() {
+  function faqQuestionsService() {
     var data = [
       {
         'id' : 'collapseOne',
@@ -124,7 +124,7 @@
 
     ];
 
-    this.getTec = getTec;
+    this.getFaqQuestions = getFaqQuestions;
 
     function getFaqQuestions() {
       return data;
