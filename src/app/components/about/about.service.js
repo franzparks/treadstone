@@ -72,9 +72,20 @@
 
     ];
 
+    var pageData = 
+      {
+        'url' : 'http://lorempixel.com/700/450/city/1/TreadStone-Property',
+
+        'text' : 
+        'hello'
+      };
+    
+    
+
 
     this.getTeam = getTeam;
     this.getCustomers = getCustomers;
+    this.getPageData = getPageData;
 
     function getTeam() {
       return team;
@@ -83,6 +94,24 @@
     function getCustomers() {
       return customers;
     }
+
+    function getPageData() {
+      return pageData;
+    }
   }
 
 })();
+
+
+/*
+'Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis \ 
+          dolores The Matarese Circle nemis omnis fugats \
+          vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit \
+          voluptatem accusantium doloremque laudantium, The Bourne Identity totam rem aperiam, \ 
+          eaque ipsa quae ab illo inventore \
+          veritatis et quasi architecto beatae The Bourne Supremacy vitae dicta sunt explicabo. Nemo enim ipsam \
+          voluptatem quia \
+          voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores The Bourne Ultimatum \
+          eos qui ratione \
+          voluptatem sequi nesciunt Angelus Domini.'
+*/

@@ -11,9 +11,11 @@
 
     vm.team = [];
     vm.customers = [];
+    vm.pageData = {};
 
     vm.team = aboutUsService.getTeam();
     vm.customers = aboutUsService.getCustomers();
+    vm.pageData = aboutUsService.getPageData();
 
     //$log.debug(' About controller called');
 }
