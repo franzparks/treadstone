@@ -200,20 +200,19 @@
                     </div>
                 </div>-->
 
-                <div class="panel panel-default">
+                <div class="panel panel-default" ng-repeat="question in faq.questions">
                     
                     <div class="panel panel-heading">
                         <h4 class="panel-title">
                             <a href="javascript:;" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                               data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine" >
-                                Aenean consequat lorem ut felis ullamcorper?
+                               data-target="#{{question.id}}" aria-expanded="false" aria-controls="collapseNine" >
+                                {{question.question}}
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseNine" class="panel-collapse collapse">
+                    <div id="{{question.id}}" class="panel-collapse collapse">
                         <div class="panel-body">
-                            {{faq.questions[8].answer}}
-
+                            {{question.answer}}
                         </div>
                     </div>
                 </div>
