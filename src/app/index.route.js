@@ -54,7 +54,7 @@
      })
     // else 404
     .otherwise('/404', {
-      templateUrl: 'app/components/404/404.html', 
+      templateUrl: 'app/components/404/error.html', 
       controller: 'ErrorController',
       controllerAs: 'error'
     });
