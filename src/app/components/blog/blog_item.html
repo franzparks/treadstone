@@ -4,12 +4,12 @@
 
         <div class="col-lg-12">
             <h1 class="page-header">Blog Post
-                <small>A Sample Blog Post</small>
+                <small>A Post about science</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="../index.html">Home</a>
+                <li><a href="#/" class="text-font1">Home</a>
                 </li>
-                <li class="active">Blog Post</li>
+                <li class="text">Blog Post</li>
             </ol>
         </div>
 
@@ -21,10 +21,10 @@
 
             <!-- the actual blog post: title/author/date/content -->
             <hr>
-            <p><i class="fa fa-clock-o"></i> Posted on August 24, 2013 at 9:00 PM by <a href="#">Start Boostrap</a>
+            <p><i class="fa fa-clock-o"></i> Posted on August 24, 2016 at 9:00 PM by <a href="#">Jeremy Renner</a>
             </p>
             <hr>
-            <img src="http://placehold.it/900x300" class="img-responsive">
+            <img src="http://placehold.it/900x300" class="img-responsive" alt="Blog Post Image">
             <hr>
             <p class="lead">Science cuts two ways, of course; its products can be used for both good and evil. But
                 there's no turning back from science. The early warnings about technological dangers also come from
@@ -67,7 +67,7 @@
 
                 <form role="form">
                     <div class="form-group">
-                        <textarea class="form-control" rows="3"></textarea>
+                        <textarea class="form-control" rows="3" aria-label="text area"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -76,14 +76,14 @@
             <hr>
 
             <!-- the comments -->
-            <h3>Start Bootstrap
+            <h3>Start Something
                 <small>9:41 PM on August 24, 2013</small>
             </h3>
             <p>This has to be the worst blog post I have ever read. It simply makes no sense. You start off by talking
                 about space or something, then you randomly start babbling about cupcakes, and you end off with random
                 fish names.</p>
 
-            <h3>Start Bootstrap
+            <h3>Someone else
                 <small>9:47 PM on August 24, 2013</small>
             </h3>
             <p>Don't listen to this guy, any blog with the categories 'dinosaurs, spaceships, fried foods, wild animals,
@@ -96,9 +96,9 @@
                 <h4>Blog Search</h4>
 
                 <div class="input-group">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" aria-label="Search blog" id="search_input">
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                            <button class="btn btn-default" type="button" aria-labelledby="search_input"><i class="fa fa-search"></i>
                             </button>
                         </span>
                 </div>
@@ -111,25 +111,25 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <ul class="list-unstyled">
-                            <li><a href="#dinosaurs">Dinosaurs</a>
+                            <li><a href="#dinosaurs" class="text-font1">Dinosaurs</a>
                             </li>
-                            <li><a href="#spaceships">Spaceships</a>
+                            <li><a href="#spaceships" class="text-font1">Spaceships</a>
                             </li>
-                            <li><a href="#fried-foods">Fried Foods</a>
+                            <li><a href="#fried-foods" class="text-font1">Fried Foods</a>
                             </li>
-                            <li><a href="#wild-animals">Wild Animals</a>
+                            <li><a href="#wild-animals" class="text-font1">Wild Animals</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-6">
                         <ul class="list-unstyled">
-                            <li><a href="#alien-abductions">Alien Abductions</a>
+                            <li><a href="#alien-abductions" class="text-font1">Alien Abductions</a>
                             </li>
-                            <li><a href="#business-casual">Business Casual</a>
+                            <li><a href="#business-casual" class="text-font1">Business Casual</a>
                             </li>
-                            <li><a href="#robots">Robots</a>
+                            <li><a href="#robots" class="text-font1">Robots</a>
                             </li>
-                            <li><a href="#fireworks">Fireworks</a>
+                            <li><a href="#fireworks" class="text-font1">Fireworks</a>
                             </li>
                         </ul>
                     </div>
@@ -139,7 +139,7 @@
             <div class="well">
                 <h4>Side Widget Well</h4>
 
-                <p>Bootstrap's default well's work great for side widgets! What is a widget anyways...?</p>
+                <p>What is a widget anyways...?</p>
             </div>
             <!-- /well -->
         </div>
