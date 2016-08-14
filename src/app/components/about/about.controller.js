@@ -6,10 +6,10 @@
     .controller('AboutController', AboutController);
 
   /** @ngInject */
-  function AboutController($log) {
+  function AboutController($log, aboutUsService) {
     //svar vm = this;
 
-    $log.debug(' About controller called');
+    //$log.debug(' About controller called');
 }
 
 })();
