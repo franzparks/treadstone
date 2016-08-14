@@ -13,7 +13,7 @@
     vm.artists = [];
     
     vm.portfolios = mainService.getFeaturedPortfolios();
-    //vm.artists = mainService.getFeaturedArtists();
+    vm.artists = mainService.getFeaturedArtists();
 
     //$log.debug('getFeaturedPortfolios : '+mainService.getFeaturedPortfolios() );
   }

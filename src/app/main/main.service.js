@@ -30,7 +30,7 @@
      
     ];
 
-    /*var featuredArtists = [
+    var featuredArtists = [
       {
         'author': 'Alexander Conklin',
         'url': 'http://lorempixel.com/700/450/abstract/5/Alex-Conklin',
@@ -49,18 +49,18 @@
       
       
      
-    ];*/
+    ];
 
     this.getFeaturedPortfolios = getFeaturedPortfolios;
-    //this.getFeaturedArtists = getFeaturedArtists;
+    this.getFeaturedArtists = getFeaturedArtists;
 
     function getFeaturedPortfolios() {
       return featuredPortfolios;
     }
 
-    //function getFeaturedArtists() {
-    //  return featuredArtists;
-    //}
+    function getFeaturedArtists() {
+      return featuredArtists;
+    }
   }
 
 })();
