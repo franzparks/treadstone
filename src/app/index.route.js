@@ -58,8 +58,7 @@
       controller: 'ErrorController',
       controllerAs: 'error'
     })
-    .otherwise('/', {
-    });
+    .otherwise('/');
   }
 
 })();
