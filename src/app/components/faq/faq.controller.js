@@ -8,8 +8,8 @@
   /** @ngInject */
   function FaqController($log, faqQuestionsService) {
     var vm = this;
-    vm.faq = [];
-    vm.faq = faqQuestionsService.getFaqQuestions();
+    vm.questions = [];
+    vm.questions = faqQuestionsService.getFaqQuestions();
 
     $log.debug(' Faq controller called');
 }
