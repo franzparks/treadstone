@@ -17,22 +17,22 @@
 
     <div class="row">
 
-        <div class="col-sm-3">
+        <div class="col-sm-3" ng-repeat="deal in pricing.prices">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <strong>Basic</strong>
+                    <strong>{{deal.type}}</strong>
                 </div>
                 <div class="panel-body">
-                    <h3 class="panel-title price">$19
-                        <span class="price-cents">99</span>
+                    <h3 class="panel-title price">{{deal.price}}
+                        <span class="price-cents">{{deal.price_cents}}</span>
                         <span class="price-month">mo.</span>
                     </h3>
                 </div>
                 <ul class="list-group">
-                    <li class="list-group-item">5 Paintings</li>
-                    <li class="list-group-item">5 GB of Storage For Images</li>
-                     <li class="list-group-item">No Transportation</li>
-                     <li class="list-group-item">No Guarantee</li>
+                    <li class="list-group-item">{{deal.paintings}}</li>
+                    <li class="list-group-item">{{deal.storage}}</li>
+                     <li class="list-group-item">{{deal.transportation}}</li>
+                     <li class="list-group-item">{{deal.guarantee}}</li>
                     <li class="list-group-item"><button class="btn btn-primary">Sign Up Now!</button>
                     </li>
                 </ul>

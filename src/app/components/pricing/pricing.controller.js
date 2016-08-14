@@ -6,10 +6,13 @@
     .controller('PricingController', PricingController);
 
   /** @ngInject */
-  function PricingController($log) {
-    //var vm = this;
+  function PricingController($log, pricingService) {
+    var vm = this;
 
-    $log.debug(' Pricing controller called');
+    vm.prices = [];
+    vm.prices = pricingService.getPrices();
+
+    //$log.debug(' Pricing controller called');
 }
 
 })();

@@ -12,7 +12,7 @@
         'type' : 'Basic',
         'price': '$19',
         'price_cents':'99',
-        'price_month':'mo.'
+        'price_month':'mo.',
         'paintings' : '5 Paintings',
         'storage':'5 GB of Storage For Images',
         'transportation':'No Transportation',
@@ -22,7 +22,7 @@
         'type' : 'Plus',
         'price': '$39',
         'price_cents':'99',
-        'price_month':'mo.'
+        'price_month':'mo.',
         'paintings' : '10 Paintings',
         'storage':'10 GB of Storage For Images',
         'transportation':'Free Transportation For Paintings',
@@ -32,7 +32,7 @@
         'type' : 'Premium Best Value!',
         'price': '$49',
         'price_cents':'99',
-        'price_month':'mo.'
+        'price_month':'mo.',
         'paintings' : '10 Paintings',
         'storage':'50 GB of Storage For Images',
         'transportation':'Free Transportation For Paintings',
@@ -41,7 +41,7 @@
         'type' : 'Ultimate',
         'price': '$99',
         'price_cents':'99',
-        'price_month':'mo.'
+        'price_month':'mo.',
         'paintings' : '50 Paintings',
         'storage':'150 GB of Storage',
         'transportation':'Free Transportation For Paintings',
