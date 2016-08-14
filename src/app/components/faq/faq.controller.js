@@ -11,7 +11,7 @@
     vm.questions = [];
     vm.questions = faqQuestionsService.getFaqQuestions();
 
-    $log.debug(' Faq controller called');
+    //$log.debug(' Faq controller called');
 }
 
 })();
