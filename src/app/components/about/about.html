@@ -44,13 +44,14 @@
             <h2 class="page-header">Our Team</h2>
         </div>
 
-        <div class="col-sm-4">
-            <img class="img-responsive" src="http://placehold.it/750x450" alt="Team Member Image">
+        <div class="col-sm-4" ng-repeat=" member in about.team">
+            <img class="img-responsive" src="{{member.url}}" alt="Team Member Image">
 
-            <h3>Robert Ludlum
-                <small>C.E.O</small>
+            <h3>{{member.name}}
+                <small>{{member.title}}</small>
+            
             </h3>
-            <p>He's the man</p>
+            <p>{{member.dept}}</p>
             <ul class="list-unstyled list-inline list-social-icons">
                 <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip"
                                                             data-placement="top" title="Facebook"><i
