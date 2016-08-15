@@ -7,9 +7,12 @@
 
   /** @ngInject */
   function BlogController($log,blogService) {
-    //var vm = this;
+    var vm = this;
 
-    $log.debug(' Blog controller called');
+    vm.blogs = [];
+    vm.blogs = blogService.getBlogs();
+
+    //$log.debug(' Blog controller called');
   }
 
 })();

@@ -15,88 +15,39 @@
 
     </div>
 
-    <div class="row">
+    <div ng-repeat="blog in blog.blogs">
+    
+        <div class="row">
 
-        <div class="col-md-1">
-            <p><i class="fa fa-camera fa-4x"></i>
-            </p>
+            <div class="col-md-1">
+                <p><i class="{{blog.icon}}"></i>
+                </p>
 
-            <p>Aug 13, 2016</p>
+                <p>{{blog.date}}</p>
+            </div>
+            <div class="col-md-5">
+                <a href="#/">
+                    <img src="{{blog.url}}" class="img-responsive" alt="Blog Image">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h3><a href="#/">{{blog.title}}</a>
+                </h3>
+
+                <p>By <a href="#/">{{blog.author}}</a>
+                </p>
+
+                <p>{{blog.text}}</p>
+                <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
+            </div>
+
         </div>
-        <div class="col-md-5">
-            <a href="blog-post.html">
-                <img src="http://placehold.it/600x300" class="img-responsive" alt="Blog Image">
-            </a>
-        </div>
-        <div class="col-md-6">
-            <h3><a href="blog-post.html">A Blog about movie adaptation</a>
-            </h3>
 
-            <p>by <a href="#">Paul Greengrass</a>
-            </p>
-
-            <p>This is a very basic project about the series and how it was made.</p>
-            <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
-        </div>
+        <hr>
 
     </div>
 
-    <hr>
-
-    <div class="row">
-
-        <div class="col-md-1">
-            <p><i class="fa fa-film fa-4x"></i>
-            </p>
-
-            <p>May 24, 2015</p>
-        </div>
-        <div class="col-md-5">
-            <a href="#/">
-                <img src="http://placehold.it/600x300" class="img-responsive" alt="Blog Image">
-            </a>
-        </div>
-        <div class="col-md-6">
-            <h3><a href="#/">A Blog about the new book series</a>
-            </h3>
-
-            <p>by <a href="#/">Anonymous</a>
-            </p>
-
-            <p>This is a blog about the new series which is under development but will use Ludlum's name.</p>
-            <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="row">
-
-        <div class="col-md-1">
-            <p><i class="fa fa-file-text fa-4x"></i>
-            </p>
-
-            <p>May 10, 2014</p>
-        </div>
-        <div class="col-md-5">
-            <a href="#/">
-                <img src="http://placehold.it/600x300" class="img-responsive" alt="Blog Image">
-            </a>
-        </div>
-        <div class="col-md-6">
-            <h3><a href="blog-post.html">A Blog about nothing</a>
-            </h3>
-
-            <p>by <a href="#/">Some fan</a>
-            </p>
-
-            <p>This is a very basic blog about nothing.</p>
-            <a class="btn btn-primary" href="#/">Read More <i class="fa fa-angle-right"></i></a>
-        </div>
-    </div>
-
-    <hr>
-
+    
     <div class="row">
 
         <ul class="pager">
