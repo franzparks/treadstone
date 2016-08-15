@@ -36,6 +36,11 @@
       controller: 'ServicesController',
       controllerAs: 'services'
     })
+    .when('/signup', {
+      templateUrl: 'app/components/services/signup.html',
+      controller: 'ServicesController',
+      controllerAs: 'services'
+    })
     .when('/contact', {
       templateUrl: 'app/components/contact/contact.html', 
       controller: 'ContactController',
