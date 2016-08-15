@@ -44,8 +44,7 @@
         'title':'FSB Liason',
         'url':'http://placehold.it/750x450'
 
-      },
-
+      }
 
 
     ];

@@ -6,7 +6,7 @@
     .controller('BlogController', BlogController);
 
   /** @ngInject */
-  function BlogController($log) {
+  function BlogController($log,blogService) {
     //var vm = this;
 
     $log.debug(' Blog controller called');
