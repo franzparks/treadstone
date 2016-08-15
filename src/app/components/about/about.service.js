@@ -77,7 +77,13 @@
         'url' : 'http://lorempixel.com/700/450/city/1/TreadStone-Property',
 
         'text' : 
-        'hello'
+          'The Matarese Circle nemis omnis Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad \
+          squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa \
+          nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid \
+          single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft \
+          beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice\
+          lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you\
+          probably haven\'t heard of them accusamus labore sustainable VHS.'
       };
     
     
@@ -101,17 +107,3 @@
   }
 
 })();
-
-
-/*
-'Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis \ 
-          dolores The Matarese Circle nemis omnis fugats \
-          vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit \
-          voluptatem accusantium doloremque laudantium, The Bourne Identity totam rem aperiam, \ 
-          eaque ipsa quae ab illo inventore \
-          veritatis et quasi architecto beatae The Bourne Supremacy vitae dicta sunt explicabo. Nemo enim ipsam \
-          voluptatem quia \
-          voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores The Bourne Ultimatum \
-          eos qui ratione \
-          voluptatem sequi nesciunt Angelus Domini.'
-*/
