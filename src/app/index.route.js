@@ -31,13 +31,13 @@
       controller: 'PricingController',
       controllerAs: 'pricing'
     })
+    .when('/signup', {
+      templateUrl: 'app/components/pricing/signup.html',
+      controller: 'PricingController',
+      controllerAs: 'pricing'
+    })
     .when('/services', {
       templateUrl: 'app/components/services/services.html',
-      controller: 'ServicesController',
-      controllerAs: 'services'
-    })
-    .when('/signup', {
-      templateUrl: 'app/components/services/signup.html',
       controller: 'ServicesController',
       controllerAs: 'services'
     })
