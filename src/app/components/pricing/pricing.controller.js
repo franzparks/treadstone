@@ -13,7 +13,8 @@
     vm.prices = pricingService.getPrices();
 
     vm.signUp = function(){
-      $location.push(#/signup);
+      $location.url('/signup');
+      $log.debug(' I was called!');
     };
 
     //$log.debug(' Pricing controller called');
