@@ -135,6 +135,24 @@ body {
   font-family: Monaco, 'Lucida Console', monospace;
 }
 
+.submit {
+  display: block;
+  margin: 0px auto;
+  background: #3f51b5;
+  color: #fff;
+}
+
+
+form.validate .ng-invalid-required.ng-dirty { 
+  background-color: green;
+}
+form.validate .ng-invalid-email.ng-dirty {
+    background-color: yellow; 
+}
+div.error { 
+  color: red; font-weight: bold;
+}
+
 /* Footer Styles */
 footer {
     margin: 50px 0;
