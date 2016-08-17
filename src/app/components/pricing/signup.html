@@ -45,20 +45,19 @@
                 </label>
 
                 <div class="form-group" ng-class="{ 'has-error' : regForm.employer.$invalid }">
-                    <label for="employer"><span class="sr-only">Employer</span>
+                    <label for="employer">Employer </label>
                     <input class="form-control" id="employer" name="employer" type="text" placeholder="Employer" ng-maxlength="30" ng-model="user.employer" ng-show="getMoreInfo()">
                     <p  class="help-block" ng-show="regForm.employer.$error.maxlength">Max employer length is 30 characters</p>
-                    </label>
+                
                 </div> 
 
                 <div class="form-group" ng-class="{ 'has-error' : regForm.title.$invalid }">
-                    <label for="job-title"><span class="sr-only">Job Title</span>
+                    <label for="job-title">Job Title</label>
                     <input class="form-control" id="job-title" name="title" type="text" placeholder="Job Title" ng-maxlength="30" ng-model="user.title" ng-show="getMoreInfo()">
                     <p  class="help-block" ng-show="regForm.title.$error.maxlength">Max job title length is 30 characters</p>
-                   </label>
+                   
                 </div>
-                <a href="#/login" ng-show="getRegError()">Login</a>
-
+                
                 <button type="button" class="btn btn-lg btn-primary btn-block" ng-disabled="!user.email || !user.password" ng-click="signUp()">Sign Up</button>
             </form>
 
