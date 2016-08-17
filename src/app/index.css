@@ -143,14 +143,28 @@ body {
 }
 
 
-form.validate .ng-invalid-required.ng-dirty { 
+form1.validate .ng-invalid-required.ng-dirty { 
   background-color: green;
 }
-form.validate .ng-invalid-email.ng-dirty {
+form1.validate .ng-invalid-email.ng-dirty {
     background-color: yellow; 
 }
-div.error { 
+div1.error { 
   color: red; font-weight: bold;
+}
+
+/*
+Used to visually hide labels but keep them around for screenreaders.
+ */
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute !important;
 }
 
 /* Footer Styles */

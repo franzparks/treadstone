@@ -31,7 +31,7 @@
                     <input type="text" id="name" name="name" class="form-control" ng-model="pricing.user.name" autocomplete="name" autofocus>
                 </div>
                 
-                <div class="form-group" >
+                <div class="form-group " >
                     <label for="location">Location</label> 
                         <input class="form-control" id="location" type="text" 
                             placeholder="123, Any Street, Anywhere" ng-model="pricing.user.location" name="loc"
@@ -44,17 +44,18 @@
                 <input id="additional-info" type="checkbox" ng-model="pricing.moreInfo">
                 </label>
 
-                <div class="form-group" ng-class="{ 'has-error' : regForm.employer.$invalid }" ng-show="pricing.getMoreInfo()">
-                    <label for="employer">Employer </label>
-                    <input class="form-control" id="employer" name="employer" type="text" placeholder="Employer" ng-maxlength="30" ng-model="user.employer" >
+                <div class="form-group" ng-class="{ 'has-error' : regForm.user.employer.$invalid }">
+                    <label for="employer" ng-show="pricing.getMoreInfo()">Employer </label>
+                    <input class="form-control" id="employer" name="employer" type="text" placeholder="Employer" ng-maxlength="30" ng-model="user.employer" ng-show="pricing.getMoreInfo()">
                     <p  class="help-block" ng-show="regForm.employer.$error.maxlength">Max employer length is 30 characters</p>
                 
                 </div> 
 
-                <div class="form-group" ng-class="{ 'has-error' : regForm.title.$invalid }" ng-show="pricing.getMoreInfo()">
-                    <label for="job-title">Job Title</label>
-                    <input class="form-control" id="job-title" name="title" type="text" placeholder="Job Title" ng-maxlength="30" ng-model="user.title" >
-                    <p  class="help-block" ng-show="regForm.title.$error.maxlength">Max job title length is 30 characters</p>
+                <div class="form-group" ng-class="{ 'has-error' : regForm.user.title.$invalid }" >
+                    <label for="job-title" ng-show="pricing.getMoreInfo()"> Job Title </label>
+                    <input class="form-control" id="job-title" name="title" type="text" placeholder="Job Title" ng-maxlength="30" ng-model="user.title" ng-show="pricing.getMoreInfo()">
+                    <p  class="help-block" ng-show="regForm.user.title.$error.maxlength">Max job title length is 30 characters</p>
+                
                    
                 </div>
                 
