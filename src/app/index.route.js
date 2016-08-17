@@ -32,9 +32,9 @@
       controllerAs: 'pricing'
     })
     .when('/signup', {
-      templateUrl: 'app/components/pricing/signup.html',
-      controller: 'PricingController',
-      controllerAs: 'pricing'
+      templateUrl: 'app/components/signup/signup.html',
+      controller: 'SignUpController',
+      controllerAs: 'signup'
     })
     .when('/services', {
       templateUrl: 'app/components/services/services.html',
