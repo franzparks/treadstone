@@ -12,6 +12,8 @@
     vm.prices = [];
     vm.prices = pricingService.getPrices();
 
+    var geocoder = new google.maps.Geocoder();
+
     vm.signUp = function(){
       $location.url('/signup');
       $log.debug(' I was called!');
