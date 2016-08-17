@@ -30,25 +30,18 @@
                     <input type="text" id="name" name="name" class="form-control" ng-model="user.name" autocomplete="name" autofocus>
                 </div>
                 
-                <div class="form-group" ng-class="{ 'has-error' : regForm.email.$invalid  || getRegError() }" >
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-control" ng-model="user.email" autocomplete="email">
-                    <p class="help-block" ng-show="regForm.email.$invalid" >Enter a valid email.</p>
-                    <div ng-hide="regForm.password.$error.minlength">
-                    <p class="help-block" ng-show="getRegError() && regForm.email.$viewValue === getOldEmail()" >{{regErrorMessage}}</p>
-                    </div>
-
+                <div class="form-group" >
+                    <label for="location">Location</label> 
+                        <input class="form-control" id="location" type="text" 
+                            placeholder="123, Any Street, Anywhere" ng-model="event.location" name="loc"
+                            autocomplete="shipping street-address" autofocus>
+                    
                 </div>
+                
 
-                <div class="form-group" ng-class="{ 'has-error' : regForm.password.$invalid  }">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" class="form-control" ng-model="user.password" ng-minlength="8" >
-                    <p  class="help-block" ng-show="regForm.password.$error.minlength">Min password length is 8 characters.</p>
-                </div>
-
-                    <label for="additional-info"><span>Optional Biographical Information: </span>
-                    <input id="additional-info" type="checkbox" ng-model="moreInfo">
-                    </label>
+                <label for="additional-info"><span>Optional Biographical Information: </span>
+                <input id="additional-info" type="checkbox" ng-model="moreInfo">
+                </label>
 
                 <div class="form-group" ng-class="{ 'has-error' : regForm.employer.$invalid }">
                     <label for="employer"><span class="sr-only">Employer</span>
