@@ -20,15 +20,18 @@
         <div class="col-md-6">
             <form class="form-signin" name="regForm"  novalidate>
 
-                <div class="form-group" >
+                <div class="form-group" ng-class="{ 'has-error' : regForm.option .$invalid && regForm.option.$touched }">
                    <label for="option">Pricing option</label>
                     <input type="text" id="option" name="option" class="form-control" 
-                        ng-model="pricing.user.option" autocomplete="option" autofocus>
+                        ng-model="pricing.user.option" autocomplete="option" required autofocus>
+                        <p  class="help-block" ng-show="regForm.option.$error.required">
+                        Cannot be empty. Should be one of: Basic, Plus, Premium, Ultimate</p>
                 </div>
-
-                <div class="form-group" >
+            
+                <div class="form-group" ng-class="{ 'has-error' : regForm.name.$invalid && regForm.name.$touched }">
                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form-control" ng-model="pricing.user.name" autocomplete="name" autofocus>
+                    <input type="text" id="name" name="name" class="form-control" ng-model="pricing.user.name" autocomplete="name"      ng-maxlength="30" required autofocus>
+                    <p  class="help-block" ng-show="regForm.name.$error.maxlength">Max name length is 30 characters</p>
                 </div>
                 
                 <div class="form-group " >
@@ -43,19 +46,16 @@
                 <label for="additional-info"><span>Optional Biographical Information: </span>
                 <input id="additional-info" type="checkbox" ng-model="pricing.moreInfo">
                 </label>
-
-                <div class="form-group" ng-class="{ 'has-error' : regForm.user.employer.$invalid }">
-                    <label for="employer" ng-show="pricing.getMoreInfo()">Employer </label>
-                    <input class="form-control" id="employer" name="employer" type="text" placeholder="Employer" ng-maxlength="30" ng-model="user.employer" ng-show="pricing.getMoreInfo()">
-                    <p  class="help-block" ng-show="regForm.employer.$error.maxlength">Max employer length is 30 characters</p>
                 
+                <div class="form-group" >
+                    <label for="employer" ng-show="pricing.getMoreInfo()">Employer </label>
+                    <input class="form-control" id="employer" name="employer" type="text" placeholder="Employer" ng-maxlength="30" ng-model="pricing.user.employer" ng-show="pricing.getMoreInfo()">
+                    
                 </div> 
 
-                <div class="form-group" ng-class="{ 'has-error' : regForm.user.title.$invalid }" >
+                <div class="form-group" >
                     <label for="job-title" ng-show="pricing.getMoreInfo()"> Job Title </label>
-                    <input class="form-control" id="job-title" name="title" type="text" placeholder="Job Title" ng-maxlength="30" ng-model="user.title" ng-show="pricing.getMoreInfo()">
-                    <p  class="help-block" ng-show="regForm.user.title.$error.maxlength">Max job title length is 30 characters</p>
-                
+                    <input class="form-control" id="job-title" name="title" type="text" placeholder="Job Title" ng-maxlength="30" ng-model="pricing.user.title" ng-show="pricing.getMoreInfo()">
                    
                 </div>
                 
