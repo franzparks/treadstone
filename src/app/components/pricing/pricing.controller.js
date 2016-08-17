@@ -11,10 +11,10 @@
 
     vm.prices = [];
     vm.prices = pricingService.getPrices();
-    vm.user = {};
-    vm.pricing.moreInfo = false;
+    vm.user = { option : 'Basic'};
+    vm.moreInfo = false;
 
-    var geocoder = new google.maps.Geocoder();
+    //var geocoder = new google.maps.Geocoder();
 
     vm.signUp = function(){
       $location.url('/signup');

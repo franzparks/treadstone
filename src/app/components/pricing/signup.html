@@ -44,16 +44,16 @@
                 <input id="additional-info" type="checkbox" ng-model="pricing.moreInfo">
                 </label>
 
-                <div class="form-group" ng-class="{ 'has-error' : regForm.employer.$invalid }">
+                <div class="form-group" ng-class="{ 'has-error' : regForm.employer.$invalid }" ng-show="pricing.getMoreInfo()">
                     <label for="employer">Employer </label>
-                    <input class="form-control" id="employer" name="employer" type="text" placeholder="Employer" ng-maxlength="30" ng-model="user.employer" ng-show="pricing.getMoreInfo()">
+                    <input class="form-control" id="employer" name="employer" type="text" placeholder="Employer" ng-maxlength="30" ng-model="user.employer" >
                     <p  class="help-block" ng-show="regForm.employer.$error.maxlength">Max employer length is 30 characters</p>
                 
                 </div> 
 
-                <div class="form-group" ng-class="{ 'has-error' : regForm.title.$invalid }">
+                <div class="form-group" ng-class="{ 'has-error' : regForm.title.$invalid }" ng-show="pricing.getMoreInfo()">
                     <label for="job-title">Job Title</label>
-                    <input class="form-control" id="job-title" name="title" type="text" placeholder="Job Title" ng-maxlength="30" ng-model="user.title" ng-show="getMoreInfo()">
+                    <input class="form-control" id="job-title" name="title" type="text" placeholder="Job Title" ng-maxlength="30" ng-model="user.title" >
                     <p  class="help-block" ng-show="regForm.title.$error.maxlength">Max job title length is 30 characters</p>
                    
                 </div>
