@@ -18,11 +18,15 @@
 
     vm.signUp = function(){
       $location.url('/signup');
-      $log.debug(' I was called!');
     };
 
     vm.getMoreInfo = function(){
       return vm.moreInfo;
+    };
+
+    vm.submit = function(user){
+      $log.debug(' I was called!'+ Object.keys(user));
+
     };
 
     //$log.debug(' Pricing controller called');
