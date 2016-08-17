@@ -6,7 +6,7 @@
     .controller('SignUpController', SignUpController);
 
   /** @ngInject */
-  function SignUpController($log,$location, pricingService) {
+  function SignUpController($log,$location) {
     var vm = this;
 
     vm.prices = [];
