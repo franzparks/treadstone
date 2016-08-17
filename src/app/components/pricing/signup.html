@@ -21,32 +21,32 @@
             <form class="form-signin" name="regForm"  novalidate>
 
                 <div class="form-group" >
-                   <label for="name">Pricing option</label>
-                    <input type="text" id="name" name="name" class="form-control" 
-                        ng-model="user.name" autocomplete="name" autofocus>
+                   <label for="option">Pricing option</label>
+                    <input type="text" id="option" name="option" class="form-control" 
+                        ng-model="pricing.user.option" autocomplete="option" autofocus>
                 </div>
 
                 <div class="form-group" >
                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form-control" ng-model="user.name" autocomplete="name" autofocus>
+                    <input type="text" id="name" name="name" class="form-control" ng-model="pricing.user.name" autocomplete="name" autofocus>
                 </div>
                 
                 <div class="form-group" >
                     <label for="location">Location</label> 
                         <input class="form-control" id="location" type="text" 
-                            placeholder="123, Any Street, Anywhere" ng-model="event.location" name="loc"
+                            placeholder="123, Any Street, Anywhere" ng-model="pricing.user.location" name="loc"
                             autocomplete="shipping street-address" autofocus>
                     
                 </div>
                 
 
                 <label for="additional-info"><span>Optional Biographical Information: </span>
-                <input id="additional-info" type="checkbox" ng-model="moreInfo">
+                <input id="additional-info" type="checkbox" ng-model="pricing.moreInfo">
                 </label>
 
                 <div class="form-group" ng-class="{ 'has-error' : regForm.employer.$invalid }">
                     <label for="employer">Employer </label>
-                    <input class="form-control" id="employer" name="employer" type="text" placeholder="Employer" ng-maxlength="30" ng-model="user.employer" ng-show="getMoreInfo()">
+                    <input class="form-control" id="employer" name="employer" type="text" placeholder="Employer" ng-maxlength="30" ng-model="user.employer" ng-show="pricing.getMoreInfo()">
                     <p  class="help-block" ng-show="regForm.employer.$error.maxlength">Max employer length is 30 characters</p>
                 
                 </div> 
@@ -58,7 +58,7 @@
                    
                 </div>
                 
-                <button type="button" class="btn btn-lg btn-primary btn-block" ng-disabled="!user.email || !user.password" ng-click="signUp()">Sign Up</button>
+                <button type="button" class="btn btn-lg btn-primary btn-block" ng-disabled="!pricing.user.name || !pricing.user.option" ng-click="signUp()">Sign Up</button>
             </form>
 
         </div>
