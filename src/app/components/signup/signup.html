@@ -20,7 +20,7 @@
         <div class="col-md-6" ng-show="!signup.form_submitted">
             <form class="form-signin" name="regForm"  novalidate>
 
-                <div class="form-group" ng-class="{ 'has-error' : regForm.option .$invalid && regForm.option.$touched }">
+                <div class="form-group" ng-class="{ 'has-error' : regForm.option.$invalid && regForm.option.$touched }">
                    <label for="option">Pricing option</label>
                     <input type="text" id="option" name="option" class="form-control" 
                         ng-model="signup.option" autocomplete="option"  required autofocus>
