@@ -69,10 +69,10 @@
 
                 </div>
                 
-
+                {{contact.message}}
                     <div class="form-group col-lg-12">
                         <input type="hidden" name="save" value="contact">
-                        <button type="submit" class="btn btn-primary" ng-submit="contact.submit(message)">Submit</button>
+                        <button type="submit" class="btn btn-primary" ng-click="contact.submit(contactForm.message)">Submit</button>
                     </div>
                 </div>
             </form>
