@@ -16,7 +16,7 @@
     vm.moreInfo = false;
     vm.form_submitted = false;
 
-    var geocoder = new google.maps.Geocoder();
+    //var geocoder = new google.maps.Geocoder();
 
     vm.signUp = function(option){
       vm.option = option;
@@ -25,7 +25,7 @@
       
     };
 
-    vm.getMoreInfo = function(){
+    /*vm.getMoreInfo = function(){
       return vm.moreInfo;
     };
 
@@ -85,6 +85,7 @@
     vm.getLocation(); //initialize location search
   
     //$log.debug(' Pricing controller called');
+    */
 }
 
 })();
