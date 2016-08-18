@@ -16,7 +16,7 @@
     </div>
 
     <div class="row">
-    <div class="col-md-6" ng-show="signup.form_submitted">Thank you for signing up!</div>
+    <div class="col-md-6" ng-show="signup.form_submitted">Thank you for signing up {{signup.user.name}}!</div>
         <div class="col-md-6" ng-show="!signup.form_submitted">
             <form class="form-signin" name="regForm"  novalidate>
 
@@ -58,7 +58,7 @@
                     <input class="form-control" id="job-title" name="title" type="text" placeholder="Job Title" ng-maxlength="30" ng-model="signup.user.title" ng-show="signup.getMoreInfo()">
                    
                 </div>
-                
+               
                 <button type="button" class="btn btn-lg btn-primary btn-block" ng-disabled="!signup.user.name || !signup.option" ng-click="signup.submit(signup.user)">Sign Up</button>
             </form>
 

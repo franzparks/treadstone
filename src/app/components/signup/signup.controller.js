@@ -12,7 +12,7 @@
     //vm.prices = [];
     //vm.prices = pricingService.getPrices();
     vm.option = signUpService.getOption();
-    vm.user = {};
+    vm.user = { name : ''};
     vm.moreInfo = false;
     vm.form_submitted = false;
 
