@@ -16,8 +16,8 @@
     </div>
 
     <div class="row">
-    <div class="col-md-6" ng-show="pricing.form_submitted">Thank you for signing up!</div>
-        <div class="col-md-6" ng-show="!pricing.form_submitted">
+    <div class="col-md-6" ng-show="signup.form_submitted">Thank you for signing up!</div>
+        <div class="col-md-6" ng-show="!signup.form_submitted">
             <form class="form-signin" name="regForm"  novalidate>
 
                 <div class="form-group" ng-class="{ 'has-error' : regForm.option .$invalid && regForm.option.$touched }">
@@ -30,36 +30,36 @@
             
                 <div class="form-group" ng-class="{ 'has-error' : regForm.name.$invalid && regForm.name.$touched }">
                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form-control" ng-model="pricing.user.name" autocomplete="name"      placeholder="Name" ng-maxlength="30" required autofocus>
+                    <input type="text" id="name" name="name" class="form-control" ng-model="signup.user.name" autocomplete="name"      placeholder="Name" ng-maxlength="30" required autofocus>
                     <p  class="help-block" ng-show="regForm.name.$error.maxlength">Max name length is 30 characters</p>
                 </div>
                 
                 <div class="form-group " >
                     <label for="location">Location</label> 
                         <input class="form-control" id="location" type="text" 
-                            placeholder="123, Any Street, Anywhere" ng-model="pricing.user.location" name="loc"
+                            placeholder="123, Any Street, Anywhere" ng-model="signup.user.location" name="loc"
                             autocomplete="shipping street-address" autofocus>
                     
                 </div>
                 
 
                 <label for="additional-info"><span>Optional Biographical Information: </span>
-                <input id="additional-info" type="checkbox" ng-model="pricing.moreInfo">
+                <input id="additional-info" type="checkbox" ng-model="signup.moreInfo">
                 </label>
                 
                 <div class="form-group" >
-                    <label for="employer" ng-show="pricing.getMoreInfo()">Employer </label>
-                    <input class="form-control" id="employer" name="employer" type="text" placeholder="Employer" ng-maxlength="30" ng-model="pricing.user.employer" ng-show="pricing.getMoreInfo()">
+                    <label for="employer" ng-show="signup.getMoreInfo()">Employer </label>
+                    <input class="form-control" id="employer" name="employer" type="text" placeholder="Employer" ng-maxlength="30" ng-model="signup.user.employer" ng-show="signup.getMoreInfo()">
                     
                 </div> 
 
                 <div class="form-group" >
-                    <label for="job-title" ng-show="pricing.getMoreInfo()"> Job Title </label>
-                    <input class="form-control" id="job-title" name="title" type="text" placeholder="Job Title" ng-maxlength="30" ng-model="pricing.user.title" ng-show="pricing.getMoreInfo()">
+                    <label for="job-title" ng-show="signup.getMoreInfo()"> Job Title </label>
+                    <input class="form-control" id="job-title" name="title" type="text" placeholder="Job Title" ng-maxlength="30" ng-model="signup.user.title" ng-show="signup.getMoreInfo()">
                    
                 </div>
                 
-                <button type="button" class="btn btn-lg btn-primary btn-block" ng-disabled="!pricing.user.name || !pricing.user.option" ng-click="pricing.submit(pricing.user)">Sign Up</button>
+                <button type="button" class="btn btn-lg btn-primary btn-block" ng-disabled="!signup.user.name || !signup.user.option" ng-click="signup.submit(signup.user)">Sign Up</button>
             </form>
 
         </div>
