@@ -6,12 +6,12 @@
     .controller('SignUpController', SignUpController);
 
   /** @ngInject */
-  function SignUpController($log,$location) {
+  function SignUpController($log,$location, signUpService) {
     var vm = this;
 
-    vm.prices = [];
-    vm.prices = pricingService.getPrices();
-    vm.option = 'Basic';
+    //vm.prices = [];
+    //vm.prices = pricingService.getPrices();
+    vm.option = signUpService.getOption();
     vm.user = {};
     vm.moreInfo = false;
     vm.form_submitted = false;
@@ -39,7 +39,7 @@
      vm.successFunction = function(position) {
       var lat = position.coords.latitude;
       var lng = position.coords.longitude;
-      $scope.codeLatLng(lat, lng);
+      vm.codeLatLng(lat, lng);
     }
 
     vm.errorFunction = function(){
@@ -84,7 +84,6 @@
 
     vm.getLocation(); //initialize location search
   
-    //$log.debug(' Pricing controller called');
-}
+    //$log.debug(' Pricing controller c
 
 })();
