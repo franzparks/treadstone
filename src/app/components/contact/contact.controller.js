@@ -11,13 +11,7 @@
 
     vm.form_submitted = false;
 
-    vm.name = '';
-
-    vm.email = '';
-
-    vm.phone = '';
-
-    vm.message = '';
+    vm.message = { name : '', email : '', phone :'', message : ''};
 
     vm.submit = function(message){
       //$log.debug(' I was called!'+ Object.keys(user));
