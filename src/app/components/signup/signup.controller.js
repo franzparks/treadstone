@@ -84,6 +84,7 @@
 
     vm.getLocation(); //initialize location search
   
-    //$log.debug(' Pricing controller c
+    //$log.debug(' Pricing controller called');
+  }
 
 })();
