@@ -18,13 +18,6 @@
 
     var geocoder = new google.maps.Geocoder();
 
-    vm.signUp = function(option){
-      vm.option = option;
-      $location.url('/signup');
-      $log.debug(vm.option);
-      
-    };
-
     vm.getMoreInfo = function(){
       return vm.moreInfo;
     };
