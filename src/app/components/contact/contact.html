@@ -78,7 +78,9 @@
                 
                     <div class="form-group col-lg-12">
                         <input type="hidden" name="save" value="contact">
-                        <button type="submit" class="btn btn-primary" ng-click="contact.submit(contactForm.message)">Submit</button>
+                        <button type="submit" class="btn btn-primary" 
+                            ng-click="contact.submit(contactForm.message)" 
+                            ng-disabled="!contact.message.message || !contact.message.name">Submit</button>
                     </div>
                 </div>
             </form>
