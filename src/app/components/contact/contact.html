@@ -47,9 +47,12 @@
                         <div class="form-group col-lg-4">
                             <label for="input2">Email Address</label>
                             <input type="email" name="email" class="form-control" id="input2" 
-                                ng-model="contact.message.email" autocomplete="email" placeholder="Email" required autofocus>
+                                ng-model="contact.message.email" autocomplete="email" 
+                                placeholder="Email"  required autofocus>
                                 <p  class="help-block" ng-show="contactForm.email.$error.required && contactForm.email.$touched ">
                                     Cannot be empty</p>
+                                    <p  class="help-block" ng-show="contactForm.email.$invalid && contactForm.email.$touched && !contactForm.email.$error.required">
+                                    Incorrect format</p>
                         </div>
                         
                     </div> 
