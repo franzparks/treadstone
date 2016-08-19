@@ -32,7 +32,7 @@
                    <label for="name">Name</label>
                     <input type="text" id="name" name="name" class="form-control" ng-model="signup.user.name" autocomplete="name"      placeholder="Name" ng-maxlength="30" required autofocus>
                     <p  class="help-block" ng-show="regForm.name.$error.maxlength">Max name length is 30 characters</p>
-                    <p  class="help-block" ng-show="regForm.name.$error.required">
+                    <p  class="help-block" ng-show="regForm.name.$error.required && regForm.name.$touched">
                         Cannot be empty</p>
                 </div>
                 

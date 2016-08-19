@@ -37,9 +37,10 @@
                         <label for="input1">Name</label>
                         <input type="text" name="name" class="form-control" id="input1"
                              ng-model="contact.message.name" autocomplete="name" placeholder="Name" required autofocus>
+                        <p  class="help-block" ng-show="contactForm.name.$error.required">
+                            Cannot be empty</p>
                     </div>
-                    <p  class="help-block" ng-show="contactForm.name.$error.required">
-                        Cannot be empty</p>
+                    
                 </div>
                     
                 <div class="form-group" ng-class="{ 'has-error' : contactForm.email.$invalid && contactForm.email.$touched }">
@@ -47,9 +48,10 @@
                         <label for="input2">Email Address</label>
                         <input type="email" name="email" class="form-control" id="input2" 
                             ng-model="contact.message.email" autocomplete="email" placeholder="Email" required autofocus>
+                            <p  class="help-block" ng-show="contactForm.email.$error.required">
+                                Cannot be empty</p>
                     </div>
-                    <p  class="help-block" ng-show="contactForm.email.$error.required">
-                        Cannot be empty</p>
+                    
                 </div> 
                 <div class="form-group" ng-class="{ 'has-error' : contactForm.phone.$invalid && contactForm.phone.$touched }">   
                     <div class="form-group col-lg-3">
@@ -65,9 +67,10 @@
                         <label for="input4">Message</label>
                         <textarea name="message" class="form-control" rows="6" id="input4" 
                             ng-model="contact.message.message" required autofocus></textarea>
+                        <p  class="help-block" ng-show="contactForm.message.$error.required">
+                            Cannot be empty</p>
                     </div>
-                    <p  class="help-block" ng-show="contactForm.message.$error.required">
-                        Cannot be empty</p>
+                    
 
                 </div>
                 
