@@ -33,7 +33,7 @@
                 <div class="row">
 
                 <div class="form-group" ng-class="{ 'has-error' : contactForm.name.$invalid && contactForm.name.$touched }">
-                    <div class="form-group col-lg-4">
+                    <div class="form-group col-lg-3">
                         <label for="input1">Name</label>
                         <input type="text" name="name" class="form-control" id="input1"
                              ng-model="contact.message.name" autocomplete="name" placeholder="Name" required autofocus>
@@ -43,7 +43,7 @@
                 </div>
                     
                 <div class="form-group" ng-class="{ 'has-error' : contactForm.email.$invalid && contactForm.email.$touched }">
-                    <div class="form-group col-lg-4">
+                    <div class="form-group col-lg-3">
                         <label for="input2">Email Address</label>
                         <input type="email" name="email" class="form-control" id="input2" 
                             ng-model="contact.message.email" autocomplete="email" placeholder="Email" required autofocus>
@@ -52,7 +52,7 @@
                         Cannot be empty</p>
                 </div> 
                 <div class="form-group" ng-class="{ 'has-error' : contactForm.phone.$invalid && contactForm.phone.$touched }">   
-                    <div class="form-group col-lg-4">
+                    <div class="form-group col-lg-3">
                         <label for="input3">Phone Number</label>
                         <input type="phone" name="phone"  class="form-control"  
                             ng-model="contact.message.phone" id="input3" autocomplete="phone"  placeholder="Phone" autofocus>
