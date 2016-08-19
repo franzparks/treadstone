@@ -80,7 +80,7 @@
                         <input type="hidden" name="save" value="contact">
                         <button type="submit" class="btn btn-primary" 
                             ng-click="contact.submit(contactForm.message)" 
-                            ng-disabled="!contact.message.message || !contact.message.name">Submit</button>
+                            ng-disabled="!contact.message.message || !contact.message.name || contactForm.$invalid">Submit</button>
                     </div>
                 </div>
             </form>
