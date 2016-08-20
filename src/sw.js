@@ -72,7 +72,7 @@ toolbox.router.default = myDefaultRequestHandler;
          'https://crossorigin.me/https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js',
          'https://crossorigin.me/https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js',
 
-         'https://crossorigin.me/https://maps.googleapis.com/maps/api/js?sensor=false',
+         'http://maps.googleapis.com/maps/api/js?sensor=false',
 
          'http://localhost:3000/app/components/navbar/navbar.html',
          'http://localhost:3000/app/components/404/error.html',
