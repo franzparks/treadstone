@@ -73,6 +73,14 @@ toolbox.router.default = myDefaultRequestHandler;
          'https://crossorigin.me/https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js',
 
          'http://localhost:3000/app/components/navbar/navbar.html',
+         'http://localhost:3000/app/components/404/error.html',
+         'http://localhost:3000/app/components/about/about.html',
+         'http://localhost:3000/app/components/contact/contact.html',
+         'http://localhost:3000/app/components/faq/faq.html',
+         'http://localhost:3000/app/components/pricing/pricing.html',
+         'http://localhost:3000/app/components/services/services.html',
+         'http://localhost:3000/app/components/signup/signup.html',
+         'http://localhost:3000/app/main/main.html',
 
          'http://localhost:3000/assets/images/carlos.jpeg',
          'http://localhost:3000/assets/images/marie.jpeg',
