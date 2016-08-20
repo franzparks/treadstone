@@ -3,8 +3,6 @@
   'use strict';
 
   angular
-    .module('treadstone')
-    .constant('malarkey', malarkey)
-    .constant('moment', moment);
+    .module('treadstone');
 
 })();
