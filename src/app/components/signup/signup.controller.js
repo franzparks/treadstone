@@ -9,8 +9,6 @@
   function SignUpController($log,$location, signUpService) {
     var vm = this;
 
-    //vm.prices = [];
-    //vm.prices = pricingService.getPrices();
     vm.option = signUpService.getOption();
     vm.user = { name : ''};
     vm.moreInfo = false;
