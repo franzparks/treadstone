@@ -72,6 +72,8 @@ toolbox.router.default = myDefaultRequestHandler;
          'https://crossorigin.me/https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js',
          'https://crossorigin.me/https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js',
 
+         'https://crossorigin.me/https://maps.googleapis.com/maps/api/js?sensor=false',
+
          'http://localhost:3000/app/components/navbar/navbar.html',
          'http://localhost:3000/app/components/404/error.html',
          'http://localhost:3000/app/components/about/about.html',
@@ -89,7 +91,11 @@ toolbox.router.default = myDefaultRequestHandler;
          'http://localhost:3000/assets/images/treadStone-grounds.jpeg',
          'http://localhost:3000/assets/images/treadstone-property.jpeg',
          'http://localhost:3000/assets/images/alex-conklin.jpeg',
-         'http://localhost:3000/assets/images/Jason-Bourne-Medusa-Chameleon.jpeg'
+         'http://localhost:3000/assets/images/Jason-Bourne-Medusa-Chameleon.jpeg',
+
+         'https://placehold.it/500x300',
+         'https://placehold.it/750x450',
+         'https://placehold.it/1200x300'
 
         ]);
     }).then(function() {
