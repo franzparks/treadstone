@@ -12,37 +12,37 @@
         'name' : 'Robert Ludlum',
         'title' : 'C.E.O',
         'dept': 'The Company',
-        'url':'https://placehold.it/750x450'
+        'url':'../../assets/images/750_450.png'
       },
       {
         'name' : 'Francis Phiri',
         'title' : 'C.T.O',
         'dept': 'Tech Gadgets Dept',
-        'url':'https://placehold.it/750x450'
+        'url':'../../assets/images/750_450.png'
       },
       {
         'name' : 'Brandon Scofield',
         'title' : 'Artist',
         'dept': 'Art Dept',
-        'url':'https://placehold.it/750x450'
+        'url':'../../assets/images/750_450.png'
       },
       {
         'name' : 'Amanda Waller',
         'title' : 'The VIP',
         'dept': 'S Squad',
-        'url':'https://placehold.it/750x450'
+        'url':'../../assets/images/750_450.png'
       },
       {
         'name' : 'Jack Reacher',
         'title' : 'Fixer',
         'dept': 'Marketing',
-        'url':'https://placehold.it/750x450'
+        'url':'../../assets/images/750_450.png'
       },
       {
         'name' : 'Vasili Taleniekov',
         'dept' : 'Clandestine Ops',
         'title':'FSB Liason',
-        'url':'https://placehold.it/750x450'
+        'url':'../../assets/images/750_450.png'
 
       }
 
@@ -51,22 +51,22 @@
 
     var customers = [
       {
-        'url' : '../../assets/images/500x300.png'
+        'url' : '../../assets/images/500_300.png'
       },
       {
-        'url' : '../../assets/images/500x300.png'
+        'url' : '../../assets/images/500_300.png'
       },
       {
-        'url' : '../../assets/images/500x300.png'
+        'url' : '../../assets/images/500_300.png'
       },
       {
-        'url' : '../../assets/images/500x300.png'
+        'url' : '../../assets/images/500_300.png'
       },
       {
-        'url' : '../../assets/images/500x300.png'
+        'url' : '../../assets/images/500_300.png'
       },
       {
-        'url' : '../../assets/images/500x300.png'
+        'url' : '../../assets/images/500_300.png'
       }
 
     ];
