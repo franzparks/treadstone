@@ -66,8 +66,7 @@ toolbox.router.default = myDefaultRequestHandler;
         // Important to `return` the promise here to have `skipWaiting()`
         // fire after the cache has been updated.
         return cache.addAll([
-         '/index.html', '/sw.js','error.html','about.html','contact.html','faq.html','navbar.html','pricing.html',
-         'services.html','signup.html','main.html','index.css','manifest.json',
+         '/index.html', '/sw.js',
          'https://crossorigin.me/https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css',
          'https://crossorigin.me/https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css',
          'https://crossorigin.me/https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js',
