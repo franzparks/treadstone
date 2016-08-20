@@ -70,7 +70,18 @@ toolbox.router.default = myDefaultRequestHandler;
          'https://crossorigin.me/https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css',
          'https://crossorigin.me/https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css',
          'https://crossorigin.me/https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js',
-         'https://crossorigin.me/https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'
+         'https://crossorigin.me/https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js',
+
+         'http://localhost:3000/app/components/navbar/navbar.html',
+
+         'http://localhost:3000/assets/images/carlos.jpeg',
+         'http://localhost:3000/assets/images/marie.jpeg',
+         'http://localhost:3000/assets/images/old-soldier.jpeg',
+         'http://localhost:3000/assets/images/tam-quan.jpeg',
+         'http://localhost:3000/assets/images/treadStone-grounds.jpeg',
+         'http://localhost:3000/assets/images/treadstone-property.jpeg',
+         'http://localhost:3000/assets/images/alex-conklin.jpeg',
+         'http://localhost:3000/assets/images/Jason-Bourne-Medusa-Chameleon.jpeg'
 
         ]);
     }).then(function() {
