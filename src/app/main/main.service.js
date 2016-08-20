@@ -36,7 +36,7 @@
         'url': '../../assets/images/alex-conklin.jpeg',
         'description': 'One of the most wonderful paintings done during the days of treadstone\
                       and on and on....\
-        ',
+        '
       },
 
       {
@@ -44,8 +44,8 @@
         'url': '../../assets/images/Jason-Bourne-Medusa-Chameleon.jpeg',
         'description': 'One of the most wonderful paintings done during the days of treadstone\
                       and on and on....\
-        ',
-      },
+        '
+      }
       
       
      

@@ -6,8 +6,9 @@
     .controller('SignUpController', SignUpController);
 
   /** @ngInject */
-  function SignUpController($log,$location, signUpService) {
+  function SignUpController($log,$location, signUpService, google) {
     var vm = this;
+    
 
     vm.option = signUpService.getOption();
     vm.user = { name : ''};
