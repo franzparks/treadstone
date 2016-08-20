@@ -1,3 +1,4 @@
+/* globals google:true */
 (function() {
   'use strict';
 
@@ -6,7 +7,7 @@
     .controller('SignUpController', SignUpController);
 
   /** @ngInject */
-  function SignUpController($log,$location, signUpService, google) {
+  function SignUpController($log,$location, signUpService) {
     var vm = this;
     
 
