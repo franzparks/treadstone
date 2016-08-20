@@ -1,4 +1,5 @@
-/* globals google:true */
+/* globals google:false */
+//jshint undef:false
 (function() {
   'use strict';
 
@@ -8,9 +9,9 @@
 
   /** @ngInject */
   function SignUpController($log,$location, signUpService) {
+
     var vm = this;
     
-
     vm.option = signUpService.getOption();
     vm.user = { name : ''};
     vm.moreInfo = false;

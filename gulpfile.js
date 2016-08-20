@@ -33,6 +33,25 @@ gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
 
+// Generate prod service worker.
+gulp.task('generate-service-worker-dist', function(callback) {
+  //var distDir = path.join(IOWA.distDir, IOWA.appDir);
+  //del.sync([distDir + '/sw.js']);
+  var importScripts = ['/sw.js'];
+
+  generateServiceWorker(path, true, importScripts, function(error, serviceWorkerFileContents) {
+    if (error) {
+      return callback(error);
+    }
+    fs.writeFile(path + '/sw.js', serviceWorkerFileContents, function(error) {
+      if (error) {
+        return callback(error);
+      }
+      callback();
+    });
+  });
+});
+
 
 /***************/
 /*function writeServiceWorkerFile(rootDir, handleFetch, callback) {
