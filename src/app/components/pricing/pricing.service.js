@@ -46,7 +46,7 @@
         'storage':'150 GB of Storage',
         'transportation':'Free Transportation For Paintings',
         'guarantee':'Unlimited Warranty'
-      },
+      }
 
     ];
 
