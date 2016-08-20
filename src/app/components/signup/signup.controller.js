@@ -23,6 +23,7 @@
     vm.submit = function(user){
       //$log.debug(' I was called!'+ Object.keys(user));
       vm.form_submitted = true;
+      vm.user = user;
 
     };
 
