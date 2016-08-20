@@ -51,22 +51,22 @@
 
     var customers = [
       {
-        'url' : 'https://placehold.it/500x300'
+        'url' : '../../assets/images/500x300.png'
       },
       {
-        'url' : 'https://placehold.it/500x300'
+        'url' : '../../assets/images/500x300.png'
       },
       {
-        'url' : 'https://placehold.it/500x300'
+        'url' : '../../assets/images/500x300.png'
       },
       {
-        'url' : 'https://placehold.it/500x300'
+        'url' : '../../assets/images/500x300.png'
       },
       {
-        'url' : 'https://placehold.it/500x300'
+        'url' : '../../assets/images/500x300.png'
       },
       {
-        'url' : 'https://placehold.it/500x300'
+        'url' : '../../assets/images/500x300.png'
       }
 
     ];
