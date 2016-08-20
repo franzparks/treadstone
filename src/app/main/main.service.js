@@ -10,22 +10,22 @@
 
     var featuredPortfolios = [
       { 
-        'url': 'http://lorempixel.com/700/450/abstract/8/Carlos-The-Jackal'
+        'url': '../../assets/images/carlos.jpeg'
       },
       {
-        'url' : 'http://lorempixel.com/700/450/fashion/6/Marie'
+        'url' : '../../assets/images/marie.jpeg'
       },
       {
-        'url':'http://lorempixel.com/700/450/nature/4/TreadStone-Grounds'
+        'url':'../../assets/images/treadStone-grounds.jpeg'
       },
       {
-        'url':'http://lorempixel.com/700/450/nature/2/Tam-Quan'
+        'url':'../../assets/images/tam-quan.jpeg'
       },
       {
-        'url':'http://lorempixel.com/700/450/people/3/Carlos-Old-Soldiers'
+        'url':'../../assets/images/old-soldier.jpeg'
       },
       {
-        'url':'http://lorempixel.com/700/450/abstract/6/Wombosi'
+        'url':'../../assets/images/wombosi.jpeg'
       }    
      
     ];
@@ -33,7 +33,7 @@
     var featuredArtists = [
       {
         'author': 'Alexander Conklin',
-        'url': 'http://lorempixel.com/700/450/abstract/5/Alex-Conklin',
+        'url': '../../assets/images/alex-conklin.jpeg',
         'description': 'One of the most wonderful paintings done during the days of treadstone\
                       and on and on....\
         ',
@@ -41,7 +41,7 @@
 
       {
         'author': 'David Webb',
-        'url': 'http://lorempixel.com/700/450/abstract/1/Jason-Bourne-Medusa-Chameleon',
+        'url': '../../assets/images/Jason-Bourne-Medusa-Chameleon.jpeg',
         'description': 'One of the most wonderful paintings done during the days of treadstone\
                       and on and on....\
         ',

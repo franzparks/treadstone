@@ -73,7 +73,7 @@
 
     var pageData = 
       {
-        'url' : 'http://lorempixel.com/700/450/city/1/TreadStone-Property',
+        'url' : '../../assets/images/treadStone-property.jpeg',
 
         'text' : 
           'The Matarese Circle nemis omnis Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad \
