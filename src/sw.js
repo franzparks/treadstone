@@ -95,9 +95,11 @@ toolbox.router.default = myDefaultRequestHandler;
          'http://localhost:3000/assets/images/alex-conklin.jpeg',
          'http://localhost:3000/assets/images/Jason-Bourne-Medusa-Chameleon.jpeg',
 
-         'https://placehold.it/500x300',
-         'https://placehold.it/750x450',
-         'https://placehold.it/1200x300'
+         'http://localhost:3000/assets/images/services.png',
+
+         'http://localhost:3000/assets/images/500_300.png',
+         'http://localhost:3000/assets/images/750_450.png',
+         'http://localhost:3000/assets/images/1200_300.png'
 
         ]);
     }).then(function() {
