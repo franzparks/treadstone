@@ -1,4 +1,4 @@
-(function(global) {
+(global => {
   'use strict';
 
   // Load the sw-toolbox library.

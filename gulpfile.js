@@ -8,9 +8,42 @@
 
 var fs = require('fs');
 var gulp = require('gulp');
+
+//-------------
+var gulpIgnore = require('gulp-ignore');
+var uglify = require('gulp-uglify');
+var jshint = require('gulp-jshint');
+var $ = require('gulp-load-plugins')();
+//var conf = require('./conf');
+var path = require('path');
+
+
+var condition = './src/sw.js';
+
+gulp.task('some-task', function() {
+  gulp.src('./**/*.js')
+    .pipe(jshint())
+    .pipe(gulpIgnore.exclude(condition))
+    .pipe(uglify())
+    .pipe(gulp.dest('./dist/'));
+});
+
+
+function buildScript() {
+  return gulp.src(path.join('', '/**/sw.js'))
+    .pipe($.eslint())
+    .pipe($.eslint.format())
+    .pipe($.size())
+    .pipe(gulp.dest('./dist/'));
+};
+
+
+//------------------------------------
+
+
 /****************/
 //var packageJson = require('./package.json');
-var path = require('path');
+
 //var swPrecache = require('./src/sw-precache.js');
 /****************/
 
@@ -18,6 +51,9 @@ var path = require('path');
  *  This will load all js or coffee files in the gulp directory
  *  in order to load all gulp tasks
  */
+
+
+
 fs.readdirSync('./gulp').filter(function(file) {
   return (/\.(js|coffee)$/i).test(file);
 }).map(function(file) {
@@ -25,32 +61,37 @@ fs.readdirSync('./gulp').filter(function(file) {
 });
 
 
+
 /**
  *  Default task clean temporaries directories and launch the
  *  main optimization build task
  */
-gulp.task('default', ['clean'], function () {
+gulp.task('default', ['clean','generate-service-worker-dist'], function () {
   gulp.start('build');
 });
 
+gulp.task('generate-service-worker-dist',function() {
+  return buildScript();
+});
+
 // Generate prod service worker.
-gulp.task('generate-service-worker-dist', function(callback) {
+//gulp.task('generate-service-worker-dist', function(callback) {
   //var distDir = path.join(IOWA.distDir, IOWA.appDir);
   //del.sync([distDir + '/sw.js']);
-  var importScripts = ['/sw.js'];
+//  var importScripts = ['/sw.js'];
 
-  generateServiceWorker(path, true, importScripts, function(error, serviceWorkerFileContents) {
-    if (error) {
-      return callback(error);
-    }
-    fs.writeFile(path + '/sw.js', serviceWorkerFileContents, function(error) {
-      if (error) {
-        return callback(error);
-      }
-      callback();
-    });
-  });
-});
+//  generateServiceWorker(path, true, importScripts, function(error, serviceWorkerFileContents) {
+//    if (error) {
+//      return callback(error);
+//    }
+//    fs.writeFile(path + '/sw.js', serviceWorkerFileContents, function(error) {
+//      if (error) {
+//        return callback(error);
+//      }
+//    callback();
+//    });
+//  });
+//});
 
 
 /***************/
