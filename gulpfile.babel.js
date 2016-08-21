@@ -10,33 +10,40 @@ var fs = require('fs');
 var gulp = require('gulp');
 
 //-------------
-var gulpIgnore = require('gulp-ignore');
-var uglify = require('gulp-uglify');
-var jshint = require('gulp-jshint');
 var $ = require('gulp-load-plugins')();
-//var conf = require('./conf');
-var path = require('path');
+var packageJson = require('./package.json');
+var swPrecache = require('sw-precache');
 
+function generateServiceWorkerFileContents(rootDir, handleFetch, callback) {
+  var config = {
+    cacheId: packageJson.name,
+    handleFetch: handleFetch,
+    logger: console.log,
+    dynamicUrlToDependencies: {
+      './': [path.join(rootDir, 'views', 'index.ejs')],
+    },
+    staticFileGlobs: [
+      rootDir + '/stylesheets/**.css',
+      rootDir + '/views/**.html',
+      rootDir + '/images/**.*',
+      rootDir + '/bower_components/**/**.js',
+      rootDir + '/libs/.js',
+      rootDir + '/**.js'
+    ],
+    stripPrefix: path.join(rootDir, path.sep)
+  };
 
-var condition = './src/sw.js';
+  swPrecache(config, callback);
+}
 
-gulp.task('some-task', function() {
-  gulp.src('./**/*.js')
-    .pipe(jshint())
-    .pipe(gulpIgnore.exclude(condition))
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist/'));
+gulp.task('build-sw', function(callback) {
+  generateServiceWorkerFileContents('./app', true, function(error, serviceWorkerFileContents) {
+    if (error) {
+      return callback(error);
+    }
+    fs.writeFile(path.join('service-worker.js'), serviceWorkerFileContents, callback);
+  });
 });
-
-
-function buildScript() {
-  return gulp.src(path.join('', '/**/sw.js'))
-    .pipe($.eslint())
-    .pipe($.eslint.format())
-    .pipe($.size())
-    .pipe(gulp.dest('./dist/'));
-};
-
 
 //------------------------------------
 
@@ -66,7 +73,7 @@ fs.readdirSync('./gulp').filter(function(file) {
  *  Default task clean temporaries directories and launch the
  *  main optimization build task
  */
-gulp.task('default', ['clean','generate-service-worker-dist'], function () {
+gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
 
