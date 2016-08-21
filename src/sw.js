@@ -74,7 +74,7 @@ toolbox.router.default = myDefaultRequestHandler;
 
          'http://localhost:3000/app/index.css',
 
-         'http://maps.googleapis.com/maps/api/js?sensor=false',
+         'https://crossorigin.me/http://maps.googleapis.com/maps/api/js?sensor=false',
 
          'http://localhost:3000/app/components/navbar/navbar.html',
          'http://localhost:3000/app/components/404/error.html',
