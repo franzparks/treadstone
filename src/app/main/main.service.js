@@ -16,7 +16,7 @@
         'url' : '../../assets/images/marie.jpeg'
       },
       {
-        'url':'../../assets/images/treadStone-grounds.jpeg'
+        'url':'../../assets/images/treadstone-grounds.jpeg'
       },
       {
         'url':'../../assets/images/tam-quan.jpeg'
