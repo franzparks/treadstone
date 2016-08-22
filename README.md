@@ -10,6 +10,8 @@ which will provide a reasonable guess of the user's address and prefill the fiel
 
 The application  is also installable to the user's homescreen (via dev-tools/appication on chrome)
 
+- build process is not yet fully automated so all steps are necessary
+
 ## Steps to run:
 
  Clone the repository or download the source code
@@ -18,12 +20,12 @@ The application  is also installable to the user's homescreen (via dev-tools/app
 
 Dev:
 
-`gulp generate-service-worker` => process not yet fully automated so this step is necessary
+`gulp generate-service-worker`
 `gulp serve`
 
 
 Prod:
 
 `gulp build`
-`gulp generate-service-worker` => inside 'dist' folder
+`gulp generate-service-worker`  (inside 'dist' folder)
 `gulp serve:dist`
