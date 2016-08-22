@@ -73,7 +73,7 @@
 
     var pageData = 
       {
-        'url' : '../../assets/images/treadStone-property.jpeg',
+        'url' : '../../assets/images/treadstone-property.jpeg',
 
         'text' : 
           'The Matarese Circle nemis omnis Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad \
