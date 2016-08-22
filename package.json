@@ -52,7 +52,7 @@
     "lodash": "~3.10.1",
     "main-bower-files": "~2.9.0",
     "phantomjs": "~1.9.18",
-    "sw-precache": "^4.0.0",
+    "sw-precache": "^1.2.6",
     "uglify-save-license": "~0.4.1",
     "wiredep": "~2.2.2"
   },
