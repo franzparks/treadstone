@@ -34,11 +34,11 @@ fs.readdirSync('./gulp').filter(function(file) {
  *  Default task clean temporaries directories and launch the
  *  main optimization build task
  */
-gulp.task('default', ['clean', 'build-service-worker'], function () {
+gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
 
-gulp.task('build-service-worker', function(callback) {
+gulp.task('generate-service-worker', function(callback) {
   generateServiceWorkerFileContents('./src', true, function(error, serviceWorkerFileContents) {
     if (error) {
       return callback(error);
