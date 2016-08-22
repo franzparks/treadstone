@@ -16,16 +16,16 @@ The application  is also installable to the user's homescreen (via dev-tools/app
 
  Clone the repository or download the source code
 
-`npm install` then `bower install`
+- `npm install` then `bower install`
 
 Dev:
 
-`gulp generate-service-worker`
-`gulp serve`
+- `gulp generate-service-worker`
+- `gulp serve`
 
 
 Prod:
 
-`gulp build`
-`gulp generate-service-worker`  (inside 'dist' folder)
-`gulp serve:dist`
+- `gulp build`
+- `gulp generate-service-worker`  (inside 'dist' folder)
+- `gulp serve:dist`
