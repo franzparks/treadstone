@@ -36,4 +36,4 @@ To do:
 
 2. Add blog functionality
 
-3. Add a backend
+3. Add a backend (Firebase for starters)
