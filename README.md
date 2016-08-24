@@ -29,3 +29,11 @@ Prod:
 - `gulp build`
 - `gulp generate-service-worker`  (inside 'dist' folder)
 - `gulp serve:dist`
+
+To do:
+
+1. Add push notifications for subscribers
+
+2. Add blog functionality
+
+3. Add a backend
