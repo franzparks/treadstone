@@ -22,7 +22,7 @@
       },
       {
         'name' : 'Brandon Scofield',
-        'title' : 'Artist',
+        'title' : 'The Artist',
         'dept': 'Art Dept',
         'url':'../../assets/images/750_450.png'
       },
@@ -34,7 +34,7 @@
       },
       {
         'name' : 'Jack Reacher',
-        'title' : 'Fixer',
+        'title' : 'The Fixer',
         'dept': 'Marketing',
         'url':'../../assets/images/750_450.png'
       },
