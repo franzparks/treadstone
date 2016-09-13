@@ -10,13 +10,13 @@
     var team = [
       {
         'name' : 'Robert Ludlum',
-        'title' : 'C.E.O',
+        'title' : 'The C.E.O',
         'dept': 'The Company',
         'url':'../../assets/images/750_450.png'
       },
       {
         'name' : 'Francis Phiri',
-        'title' : 'C.T.O',
+        'title' : 'The C.T.O',
         'dept': 'Tech Gadgets Dept',
         'url':'../../assets/images/750_450.png'
       },
